@@ -66,10 +66,13 @@ console.log(totalProperties);
 
 //practice5
 
+const stringArray = ["apple", "banana", "cherry"];
+const transformedArray = transformArray(stringArray);
+
+console.log(transformedArray);
 
 
 //practice6
-
 function countFrequencies (array) { 
   const frequencies ={} ;
   for (const element of array ) {
