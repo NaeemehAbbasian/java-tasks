@@ -63,12 +63,4 @@ const totalProperties = countPropertiesRecursive(nestedObject);
 console.log(totalProperties);
 
 
-//practice5
-
-const stringArray = ["apple", "banana", "cherry"];
-const transformedArray = transformArray(stringArray);
-
-console.log(transformedArray);
-
-
 
