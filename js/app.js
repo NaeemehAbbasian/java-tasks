@@ -64,3 +64,23 @@ console.log(totalProperties);
 
 
 
+//practice5
+
+
+
+//practice6
+
+function countFrequencies (array) { 
+  const frequencies ={} ;
+  for (const element of array ) {
+    if (frequencies[element]) {
+      frequencies [element]++ ;
+    } else {
+       frequencies [element] = 1 ;
+      }
+  }
+  return frequencies;
+}
+const element = [ 'a' , 'b' , 'a' , 'd' , 'c', 'd' , 'a' , 'c' , 'b' , 'b' , 'a' ]; 
+const result = countFrequencies (element);
+console.log(result);
