@@ -62,28 +62,42 @@ const totalProperties = countPropertiesRecursive(nestedObject);
 
 console.log(totalProperties);
 
-
-
 //practice5
 
-const stringArray = ["apple", "banana", "cherry"];
-const transformedArray = transformArray(stringArray);
+// const stringArray = ["apple", "banana", "cherry"];
+// const transformedArray = transformArray(stringArray);
 
-console.log(transformedArray);
-
+// console.log(transformedArray);
 
 //practice6
-function countFrequencies (array) { 
-  const frequencies ={} ;
-  for (const element of array ) {
+function countFrequencies(array) {
+  const frequencies = {};
+  for (const element of array) {
     if (frequencies[element]) {
-      frequencies [element]++ ;
+      frequencies[element]++;
     } else {
-       frequencies [element] = 1 ;
-      }
+      frequencies[element] = 1;
+    }
   }
   return frequencies;
 }
-const element = [ 'a' , 'b' , 'a' , 'd' , 'c', 'd' , 'a' , 'c' , 'b' , 'b' , 'a' ]; 
-const result = countFrequencies (element);
+const element = ["a", "b", "a", "d", "c", "d", "a", "c", "b", "b", "a"];
+const result = countFrequencies(element);
 console.log(result);
+
+
+//practice 7
+const oldNumbers = [
+  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22,
+  23, 24,
+];
+const newArray = oldNumbers.map((number) => {
+  if (number <= 12) {
+    return `${ number } AM`;
+  } else {
+    const newNumber = number -  12 ; 
+    return `${newNumber} PM`;
+  }
+});
+console.log(newArray);
+
