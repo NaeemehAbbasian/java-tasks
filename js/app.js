@@ -101,3 +101,33 @@ const newArray = oldNumbers.map((number) => {
 });
 console.log(newArray);
 
+//practice 8
+const num = 15;
+const min = 10;
+const max = 20;
+function isWithinRange (num, min, max) {
+  if ( num >= min && num<= max) { return true;
+    } else {return false;}
+}
+console.log(isWithinRange (num, min, max));
+
+
+//practice 9
+const weight = 80;
+const height = 1.90;
+
+function catagorizeWeight (weight, height) {
+  const result = weight / (height * height);
+  if ( result < 18.5 ) { return 'Underweight';} 
+  else if ( result >= 18.5 && result <= 24.9) { return 'NormalWeight';} 
+  else if ( result >= 25 && result <= 29.9) { return 'Overweight';}
+    else {return 'Obesity';}
+}  
+  
+console.log(catagorizeWeight (weight, height));
+
+
+
+
+
+
